@@ -18,7 +18,7 @@ options.add_argument('--start-maximized')
 driver = webdriver.Chrome(options=options)
 
 # 로그인 페이지 접속
-login_url = os.getenv("LOGIN_URL")  # 실제 로그인 페이지 주소로 변경 필요
+login_url = os.getenv("LOGIN_URL") 
 # 교재 URL
 url = os.getenv("PAGE_URL")
 
