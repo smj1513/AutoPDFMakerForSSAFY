@@ -59,11 +59,13 @@
     ```env
     # .env 파일 예시
     # 필요한 환경 변수를 여기에 추가하세요.
-    # 예: API_KEY, 로그인 정보 등
+    # 예: 로그인 정보, 로그인 페이지 URL, 캡쳐할 페이지 URL, 캡쳐한 이미지를 임시 저장할 폴더
 
-    WEBSITE_URL="https://example.com"
-    USERNAME="your_username"
-    PASSWORD="your_password"
+    IMAGE_FILE_DIR=
+    USER_ID=
+    USER_PW=
+    LOGIN_URL=
+    PAGE_URL=
     ```
 
 ## 실행
