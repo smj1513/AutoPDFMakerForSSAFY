@@ -18,7 +18,7 @@ options.add_argument('--start-maximized')
 driver = webdriver.Chrome(options=options)
 
 # 로그인 페이지 접속
-login_url = os.getenv("LOGIN_URL")  # 실제 로그인 페이지 주소로 변경 필요
+login_url = os.getenv("LOGIN_URL") 
 # 교재 URL
 url = os.getenv("PAGE_URL")
 
@@ -34,8 +34,7 @@ driver.find_element(By.ID, 'userPwd').send_keys(user_pw)
 
 # 로그인 버튼 클릭 (클래스, id 등 실제 요소로 변경)
 driver.find_element(By.CLASS_NAME, 'btn-lg').click()
-time.sleep(4)  # 로그인 대기 (2차 인증, 보안문자 등 있을 경우 추가 처리 필요)
-
+time.sleep(4)  # 로그인 대기
 # 교재 URL
 driver.get(url)
 # 페이지 로딩 대기 (네트워크 환경/페이지 구조에 따라 증가 가능)
