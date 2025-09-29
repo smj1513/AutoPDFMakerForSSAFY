@@ -46,7 +46,7 @@ print(f"전체 페이지 수: {num_pages}")
 
 for i in range(num_pages):
     try:
-        element_to_capture = driver.find_element(By.CLASS_NAME, "current")
+        element_to_capture = driver.find_element(By.CLASS_NAME, "book")#current
         shot_path = os.path.join(image_files_dir, f"page_{i + 1}.png")
         element_to_capture.screenshot(shot_path)
         print(f"{i + 1}페이지 캡처 저장: {shot_path}")
